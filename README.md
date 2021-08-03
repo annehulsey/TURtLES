@@ -1,6 +1,8 @@
-<p align="center"><font size=7> <b>TURtLES</b></font>
+<p align="center"> <font size=7> <b>TURtLES</b> </font></p>
 
-<p align="center"><font size=4> <b>T</b>he <b>U</b>ncertainty in <b>R</b>egional-<b>L</b>evel <b>E</b>arthquake <b>S</b>cenario simulation </font></p>
+<p align="center"> <font size=4> <b>T</b>he <b>U</b>ncertainty in <b>R</b>egional-<b>L</b>evel <b>E</b>arthquake <b>S</b>cenario simulation </font></p>
+
+<p align="center"> <img src="https://raw.githubusercontent.com/ahulsey/TURtLES/doc_src/figures/TURtLES_title.png" align="middle" height=100 /></p>
 
 
 
