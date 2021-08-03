@@ -23,7 +23,9 @@ These sets of ground motion maps are typically utilized in regional performance 
 
 ## How can I get started?
 
-You can get oriented with [two examples](https://github.com/annehulsey/TURtLES/example) provided as Jupyter Notebooks on the `TURtLES` GitHub repository. ***Selecting a Rupture Scenario*** uses the EQHazard tool to filter an ERF's ruptures to identify a relevant source and rupture index for the desired magnitude and location (a M<sub>w</sub>7.2 on the San Andreas Fault). ***Simulate Ground Motion Maps for a Rupture Scenario*** generates a set of simulated ground motion maps for the earthquake scenario, based on the site locations and the elected GMM (Chiou and Youngs, 2014).
+You can get oriented with [two examples](https://github.com/annehulsey/TURtLES/tree/main/example) provided as Jupyter Notebooks on the `TURtLES` GitHub repository. 
+- ***Selecting a Rupture Scenario***: uses the EQHazard tool to filter an ERF's ruptures to identify a relevant source and rupture index for the desired magnitude and location (a M<sub>w</sub>7.2 on the San Andreas Fault). 
+- ***Simulate Ground Motion Maps for a Rupture Scenario***: generates a set of simulated ground motion maps for the earthquake scenario, based on the site locations and the elected GMM (Chiou and Youngs, 2014).
 
 ## Installation
 
@@ -39,5 +41,5 @@ pip install TURtLES
 
 ## Contact
 
-Anne Hulsey, University of Auckland, [anne.hulsey@auckland.ac.nz](anne.hulsey@auckland.ac.nz)
+Anne Hulsey, University of Auckland, anne.hulsey@auckland.ac.nz
 
