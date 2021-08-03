@@ -14,7 +14,7 @@ long_description = read('README.md')
 
 setup(
     name='TURtLES',
-    version=1.2,
+    version=1.0,
     url='https://github.com/annehulsey/TURtLES',
     license='MIT License',
     author='Anne Hulsey',
