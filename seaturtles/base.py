@@ -16,9 +16,9 @@ InteractiveShell.ast_node_interactivity = "all"
 from IPython.display import display
 
 ## get the absolute path name of the included EQHazard.jar file
-import TURtLES
+import seaturtles
 import inspect
-EQHazard_file = os.path.dirname(inspect.getfile(TURtLES)) + '\EQHazard.jar'
+EQHazard_file = os.path.dirname(inspect.getfile(seaturtles)) + '\EQHazard.jar'
 
 def set_plot_formatting():
     # set up plot formatting

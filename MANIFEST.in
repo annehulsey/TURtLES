@@ -1,1 +1,1 @@
-recursive-include TURtLES *.jar *.csv *.json
+recursive-include seaturtles *.jar *.csv *.json

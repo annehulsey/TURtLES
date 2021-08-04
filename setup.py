@@ -13,13 +13,13 @@ def read(*filenames, **kwargs):
 long_description = read('README.md')
 
 setup(
-    name='TURtLES',
+    name='seaturtles',
     version=1.0,
-    url='https://github.com/annehulsey/TURtLES',
+    url='https://github.com/annehulsey/seaturtles',
     license='MIT License',
     author='Anne Hulsey',
     author_email='anne.hulsey@auckland.ac.nz',
-    description='The Uncertainty in Regional-Level Earthquake Scenario simulation',
+    description='Scenario Earthquakes and the Uncertainty in Regional-Level Estimates of Shaking Intensities',
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages = find_packages(),
