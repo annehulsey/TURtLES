@@ -22,9 +22,11 @@ These sets of ground motion maps are typically utilized in regional performance 
 
 ## How can I get started?
 
-You can get oriented with the [Example](https://github.com/annehulsey/seaturtles/tree/main/example) provided on the `seaturtles` GitHub repository. This folder contains two Jupyter Notebooks:
+You can get oriented with the [example](https://github.com/annehulsey/seaturtles/tree/main/example) provided on the `seaturtles` GitHub repository. This example includes two Jupyter Notebooks and two supporting data files:
 - ***Selecting a Rupture Scenario***: uses the EQHazard tool to filter an ERF's ruptures to identify a relevant source and rupture index for the desired magnitude and location (a M<sub>w</sub>7.2 on the San Andreas Fault). 
 - ***Simulate Ground Motion Maps for a Rupture Scenario***: generates a set of simulated ground motion maps for the earthquake scenario, based on the site locations and the selected GMM (Chiou and Youngs, 2014).
+- ***SF_Downtown_Sites.csv***: contains attributes for the site locations.
+- ***CA_polygon.geojson***: contains an outline of California, for mapping the ERF ruptures.
 
 ## Installation
 
