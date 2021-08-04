@@ -1,6 +1,6 @@
 <p align="center"> <img src="https://raw.githubusercontent.com/annehulsey/seaturtles/main/doc_src/figures/seaturtles_title.PNG" align="middle" height=75 /></p>
 
-<p align="center"> <b>S</b>cenario</b> <b>E</b>arthquakes</b> <b>a</b>nd </b><b>t</b>he <b>U</b>ncertainty in <b>R</b>egional-<b>L</b>evel <b>E</b>stimates of <b>S</b>haking intensities</p>
+<p align="center"> <b>S</b>cenario</b> <b>E</b>arthquakes</b> <b>a</b>nd</b> <b>t</b>he <b>U</b>ncertainty in <b>R</b>egional-<b>L</b>evel <b>E</b>stimates of <b>S</b>haking Intensities</p>
 
 
 
