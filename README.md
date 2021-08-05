@@ -22,9 +22,10 @@ These sets of ground motion maps are typically utilized in regional performance 
 
 ## How can I get started?
 
-You can get oriented with the [example](https://github.com/annehulsey/seaturtles/tree/main/example/example.zip) provided on the `seaturtles` GitHub repository. This example includes two Jupyter Notebooks and two supporting data files:
-- ***Selecting a Rupture Scenario***: uses the EQHazard tool to filter an ERF's ruptures to identify a relevant source and rupture index for the desired magnitude and location (a M<sub>w</sub>7.2 on the San Andreas Fault). 
-- ***Simulate Ground Motion Maps for a Rupture Scenario***: generates a set of simulated ground motion maps for the earthquake scenario, based on the site locations and the selected GMM (Chiou and Youngs, 2014).
+You can get oriented with the [example](https://github.com/annehulsey/seaturtles/tree/main/example/example.zip) provided on the `seaturtles` GitHub repository. This example includes three Jupyter Notebooks and two supporting data files:
+- ***Selecting Indices for an Earthquake Scenario***: uses the EQHazard tool to filter an ERF's ruptures to identify relevant source and rupture indices for the desired magnitude(s) and location(s). 
+- ***Simulate Ground Motion Maps for an Earthquake Scenario***: generates a set of simulated ground motion maps for a M<sub>w</sub>7.2 rupture on the San Andreas Fault, based on the site locations and the selected GMM (Chiou and Youngs, 2014).
+- ***Simulate Ground Motion Maps for Multiple Earthquake Scenarios***: generates a set of simulated ground motion maps for each of four earthquake scenarios.
 - ***SF_Downtown_Sites.csv***: contains attributes for the site locations.
 - ***CA_polygon.geojson***: contains an outline of California, for mapping the ERF ruptures.
 
@@ -35,6 +36,8 @@ You can get oriented with the [example](https://github.com/annehulsey/seaturtles
 ```
 pip install seaturtles
 ```
+
+The embedded [EQHazard tool](https://github.com/NHERI-SimCenter/GroundMotionUtilities/tree/master/EQHazard) requires Java. It can be downloaded [here](https://www.java.com/en/download/).
 
 ## Licence
 

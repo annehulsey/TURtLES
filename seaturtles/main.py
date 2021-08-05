@@ -62,7 +62,36 @@ def create_eqhazard_input(eq_input_file, rupture_dict, sites, gmm, sa_periods):
         json.dump(eq_hazard, f, indent=4)
 
 
-def extract_eqhazard_data(EQHazard_file, input_file, output_file):
+def run_EQHazard(input_file, output_file):
+    """
+    Runs SimCenter's EQHazard tool
+
+         The EQHazard tool documentation is available at:
+         https://github.com/NHERI-SimCenter/GroundMotionUtilities/tree/master/EQHazard
+
+    Parameters
+    ----------
+    input_file: string
+        name of a json file following the EQHazard specifications
+            with EnableJsonOutput = True
+
+    """
+
+    try:
+        command_run = subprocess.call(['java', '-jar', '-mx1g', EQHazard_file, input_file, output_file])
+
+        if command_run == 0:
+            print('EQHazard ran successfully.')
+        else:
+            print('There was a problem running the EQHazard.jar file, start troubleshooting.')
+            print('\tFor example, check your allowable heap size (may need to reduce it from the current -mx1g).')
+
+    except:
+        print('There was a problem running the EQHazard.jar file. Check that Java is installed.')
+
+
+
+def extract_eqhazard_data(input_file, output_file):
     """
     Runs SimCenter's EQHazard tool and extracts the data in the desired format
 
@@ -79,9 +108,6 @@ def extract_eqhazard_data(EQHazard_file, input_file, output_file):
 
     Parameters
     ----------
-    EQHazard_file: string
-        name of the EQHazard.jar file, including path name
-
     input_file: string
         name of a json file following the EQHazard specifications
             with EnableJsonOutput = True
@@ -101,11 +127,7 @@ def extract_eqhazard_data(EQHazard_file, input_file, output_file):
     eqhazard_output = output_file.replace('.h5', '.json')
 
     # run EQHazard
-    command_run = subprocess.call(['java', '-jar', EQHazard_file, input_file, eqhazard_output])
-    if command_run == 0:
-        print('EQHazard ran successfully.')
-    else:
-        print('There was a problem running the EQHazard.jar file, start troubleshooting.')
+    run_EQHazard(input_file, eqhazard_output)
 
     # open the EQHazard output
     with open(eqhazard_output, 'r') as inFile:
