@@ -39,7 +39,7 @@ pip install seaturtles
 
 The embedded [EQHazard tool](https://github.com/NHERI-SimCenter/GroundMotionUtilities/tree/master/EQHazard) requires Java. It can be downloaded [here](https://www.java.com/en/download/).
 
-## Licence
+## License
 
 `seaturtles` is distributed under the MIT license, see [LICENSE](https://github.com/annehulsey/seaturtles/blob/main/LICENSE).
 
