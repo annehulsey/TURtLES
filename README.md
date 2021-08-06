@@ -41,7 +41,7 @@ The embedded [EQHazard tool](https://github.com/NHERI-SimCenter/GroundMotionUtil
 
 ## Licence
 
-`seaturtles` is distributed under the MIT license, see [LICENSE](https://github.com/annehulsey/TURtLES/blob/main/LICENSE).
+`seaturtles` is distributed under the MIT license, see [LICENSE](https://github.com/annehulsey/seaturtles/blob/main/LICENSE).
 
 ## Contact
 
