@@ -11,5 +11,5 @@ import json
 ## get the absolute path name of the included EQHazard.jar file
 import seaturtles
 import inspect
-EQHazard_file = os.path.dirname(inspect.getfile(seaturtles)) + '\EQHazard.jar'
+EQHazard_file = os.path.dirname(inspect.getfile(seaturtles)) + '/EQHazard.jar'
 
