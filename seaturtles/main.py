@@ -577,12 +577,12 @@ def ground_motion_simulation(eqhazard_file, n_realizations, output_file):
     etas = np.empty_like(within_residuals)
     ln_sa = np.empty_like(within_residuals)
     for iReal in range(n_realizations):
-        # calculate epsilons (scaled by the within event std devitation
+        # calculate epsilons (scaled by the within event std devitation)
         epsilons[:, :, :, iReal] = within_residuals[:, :, :, iReal] * within_stdevs
-        # calculate etas (scaled by the between event std devitation
+        # calculate etas (scaled by the between event std devitation)
         etas[:, :, :, iReal] = between_residuals[:, :, :, iReal] * between_stdevs
         # combine for ground motion prediction equation
-        ln_sa[:, :, :, iReal] = medians + epsilons[:, :, :, iReal] + etas[:, :, :,iReal]
+        ln_sa[:, :, :, iReal] = np.log(medians) + epsilons[:, :, :, iReal] + etas[:, :, :,iReal]
 
     # ground motion, in real space
     ground_motion = np.exp(ln_sa)

@@ -14,7 +14,7 @@ long_description = read('README.md')
 
 setup(
     name='seaturtles',
-    version='1.0.2',
+    version='1.1.0',
     url='https://github.com/annehulsey/seaturtles',
     license='MIT License',
     author='Anne Hulsey',
